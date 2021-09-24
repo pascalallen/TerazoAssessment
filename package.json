@@ -1,0 +1,19 @@
+{
+  "name": "terazo-assessment",
+  "version": "1.0.0",
+  "description": "Technical Assessment for Terazo",
+  "main": "src/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascalallen/TerazoAssessment.git"
+  },
+  "author": "Pascal Allen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pascalallen/TerazoAssessment/issues"
+  },
+  "homepage": "https://github.com/pascalallen/TerazoAssessment#readme"
+}
