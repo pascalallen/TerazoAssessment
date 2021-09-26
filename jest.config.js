@@ -3,32 +3,32 @@ module.exports = {
   clearMocks: true,
 
   globals: {
-    "ts-jest": {
-      tsconfig: "tsconfig.jest.json",
-      diagnostics: true,
-    },
+    'ts-jest': {
+      tsconfig: 'tsconfig.jest.json',
+      diagnostics: true
+    }
   },
 
-  moduleDirectories: ["src", "node_modules"],
+  moduleDirectories: ['src', 'node_modules'],
 
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 
-  transform: { "^.+\\.(ts|tsx)$": "ts-jest" },
+  transform: { '^.+\\.(ts|tsx)$': 'ts-jest' },
 
-  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  testRegex: '(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
 
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 
-  preset: "ts-jest/presets/js-with-ts",
+  preset: 'ts-jest/presets/js-with-ts',
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1",
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
 
   collectCoverage: true,
 
-  coverageReporters: ["html"],
+  coverageReporters: ['html'],
 
-  coverageDirectory: "<rootDir>/src/tests/reports",
+  coverageDirectory: '<rootDir>/src/reports'
 };
