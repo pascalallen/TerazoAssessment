@@ -1,0 +1,16 @@
+[
+    {
+        "warehouseId": 0,
+        "warehouseName": "Pier 10 Holdings",
+        "warehouseDescription": "Key East Coast shipping/receiving location for storing finished product, ready for distribution.",
+        "warehouseAddress": {
+            "buildingName": "string",
+            "streetLine1": "string",
+            "streetLine2": "string",
+            "city": "string",
+            "stateProvince": "string",
+            "zipPostalCode": "string",
+            "country": "string"
+        }
+    }
+]

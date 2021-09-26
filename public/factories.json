@@ -1,0 +1,16 @@
+[
+    {
+        "factoryId": 0,
+        "factoryName": "Newark Latex Mfg.",
+        "factoryDescription": "Key East Coast facility for raw latex material to be processed into final products for the medical industry.",
+        "factoryAddress": {
+            "buildingName": "string",
+            "streetLine1": "string",
+            "streetLine2": "string",
+            "city": "string",
+            "stateProvince": "string",
+            "zipPostalCode": "string",
+            "country": "string"
+        }
+    }
+]

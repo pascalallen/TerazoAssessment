@@ -16,8 +16,8 @@ info:
     The Vandelay Industries API platform, documented here, represents a unified
     view of its ERP and CRM systems for use by both internal applications and
     3rd-party strategic partner system integrations.
-     
-         
+
+
   version: 0.0.1
 host: vandelay.apivista.com
 schemes:
