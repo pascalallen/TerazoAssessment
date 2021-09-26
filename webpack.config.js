@@ -1,60 +1,60 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: "./src/app.tsx",
+  entry: './src/app.tsx',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
-        ],
+          'sass-loader'
+        ]
       },
       // Compiles files that come with fontawesome
       {
         test: /\.(png|gif|jpg|cur)$/i,
-        loader: "url-loader",
-        options: { limit: 8192 },
+        loader: 'url-loader',
+        options: { limit: 8192 }
       },
       {
         test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: "url-loader",
-        options: { limit: 10000, mimetype: "application/font-woff2" },
+        loader: 'url-loader',
+        options: { limit: 10000, mimetype: 'application/font-woff2' }
       },
       {
         test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: "url-loader",
-        options: { limit: 10000, mimetype: "application/font-woff" },
+        loader: 'url-loader',
+        options: { limit: 10000, mimetype: 'application/font-woff' }
       },
       {
         test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: "file-loader",
-      },
-    ],
+        loader: 'file-loader'
+      }
+    ]
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: ['.tsx', '.ts', '.js'],
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+      '@': path.resolve(__dirname, './src')
+    }
   },
   output: {
-    filename: "app.js",
-    path: path.resolve(__dirname, "./public/js"),
+    filename: 'app.js',
+    path: path.resolve(__dirname, './public/js')
   },
   devServer: {
-    static: path.join(__dirname, "./public"),
+    static: path.join(__dirname, './public'),
     compress: true,
-    port: 3000,
-  },
+    port: 3000
+  }
 };
