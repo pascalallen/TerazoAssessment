@@ -7,7 +7,7 @@ Technical assessment for Terazo
 ## Prerequisites
 
 - [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+- [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Development Environment Setup
 
@@ -31,7 +31,7 @@ $ `npm run start:dev`
 
 $ `npm run test`
 
-### Setup Swagger Docs
+### Start Swagger Docs Docker Container
 
 ```
 docker run -p 80:8080 -e BASE_URL=/swagger \
@@ -43,4 +43,4 @@ docker run -p 80:8080 -e BASE_URL=/swagger \
 
 1. Clone repo, install dependencies and start dev server
 2. Visit http://localhost:3000/ in your browser
-3. (Optional) Swagger Docs can be viewed at http://localhost:3000/swagger
+3. (Optional) Swagger Docs can be viewed at http://localhost:3000/swagger, after Docker container has been started
