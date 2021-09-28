@@ -15,10 +15,6 @@ Technical assessment for Terazo
 
 $ `cd <projects-parent-directory> && git clone https://github.com/pascalallen/TerazoAssessment.git`
 
-### Create Environment file and Modify
-
-$ `cp .env.example .env`
-
 ### Install NPM Dependencies
 
 $ `npm install`
