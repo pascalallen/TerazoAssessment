@@ -39,4 +39,4 @@ docker run -p 80:8080 -e BASE_URL=/swagger \
 
 1. Clone repo, install dependencies and start dev server
 2. Visit http://localhost:3000/ in your browser
-3. (Optional) Swagger Docs can be viewed at http://localhost:3000/swagger, after Docker container has been started
+3. (Optional) Swagger Docs can be viewed at http://localhost/swagger, after Docker container has been started
